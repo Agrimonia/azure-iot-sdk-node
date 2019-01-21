@@ -1,0 +1,493 @@
+### YamlMime:XRefMap
+sorted: true
+references:
+- uid: azure-iot-device
+  name: azure-iot-device
+  href: api/index.html
+- uid: azure-iot-device.AmqpTransportOptions
+  name: AmqpTransportOptions
+  href: api/AmqpTransportOptions.html#azure_iot_device_AmqpTransportOptions
+  fullName: AmqpTransportOptions
+- uid: azure-iot-device.BlobUpload
+  name: BlobUpload
+  href: api/BlobUpload.html#azure_iot_device_BlobUpload
+  fullName: BlobUpload
+- uid: azure-iot-device.BlobUpload.updateSharedAccessSignature
+  name: updateSharedAccessSignature(string)
+  href: api/BlobUpload.html#azure_iot_device_BlobUpload_updateSharedAccessSignature
+- uid: azure-iot-device.BlobUpload.uploadToBlob
+  name: 'uploadToBlob(string, Stream, number, (err?: Error) => void)'
+  href: api/BlobUpload.html#azure_iot_device_BlobUpload_uploadToBlob
+- uid: azure-iot-device.Client
+  name: Client
+  href: api/Client.html#azure_iot_device_Client
+  fullName: Client
+- uid: azure-iot-device.Client.close
+  name: close(Callback<results.Disconnected>)
+  href: api/Client.html#azure_iot_device_Client_close
+- uid: azure-iot-device.Client.close_1
+  name: close()
+  href: api/Client.html#azure_iot_device_Client_close_1
+- uid: azure-iot-device.Client.constructor
+  name: Client(DeviceTransport, string, BlobUploadClient)
+  href: api/Client.html#azure_iot_device_Client_constructor
+- uid: azure-iot-device.Client.fromAuthenticationProvider
+  name: fromAuthenticationProvider(AuthenticationProvider, any)
+  href: api/Client.html#azure_iot_device_Client_fromAuthenticationProvider
+- uid: azure-iot-device.Client.fromConnectionString
+  name: fromConnectionString(string, any)
+  href: api/Client.html#azure_iot_device_Client_fromConnectionString
+- uid: azure-iot-device.Client.fromSharedAccessSignature
+  name: fromSharedAccessSignature(string, any)
+  href: api/Client.html#azure_iot_device_Client_fromSharedAccessSignature
+- uid: azure-iot-device.Client.onDeviceMethod
+  name: 'onDeviceMethod(string, (request: DeviceMethodRequest, response: DeviceMethodResponse) => void)'
+  href: api/Client.html#azure_iot_device_Client_onDeviceMethod
+- uid: azure-iot-device.Client.uploadToBlob
+  name: uploadToBlob(string, Stream, number, ErrorCallback)
+  href: api/Client.html#azure_iot_device_Client_uploadToBlob
+- uid: azure-iot-device.Client.uploadToBlob_1
+  name: uploadToBlob(string, Stream, number)
+  href: api/Client.html#azure_iot_device_Client_uploadToBlob_1
+- uid: azure-iot-device.create
+  name: create(string, string, string, string | number)
+  href: api/create.html#azure_iot_device_create
+- uid: azure-iot-device.createDeviceMethodExchange
+  name: createDeviceMethodExchange(DeviceMethodRequest, DeviceMethodResponse)
+  href: api/createDeviceMethodExchange.html#azure_iot_device_createDeviceMethodExchange
+- uid: azure-iot-device.createWithSharedAccessKey
+  name: createWithSharedAccessKey(string, string, string)
+  href: api/createWithSharedAccessKey.html#azure_iot_device_createWithSharedAccessKey
+- uid: azure-iot-device.createWithX509Certificate
+  name: createWithX509Certificate(string, string)
+  href: api/createWithX509Certificate.html#azure_iot_device_createWithX509Certificate
+- uid: azure-iot-device.DeviceClientOptions
+  name: DeviceClientOptions
+  href: api/DeviceClientOptions.html#azure_iot_device_DeviceClientOptions
+  fullName: DeviceClientOptions
+- uid: azure-iot-device.DeviceClientOptions.amqp
+  name: amqp
+  href: api/DeviceClientOptions.html#azure_iot_device_DeviceClientOptions_amqp
+  fullName: amqp
+- uid: azure-iot-device.DeviceClientOptions.ca
+  name: ca
+  href: api/DeviceClientOptions.html#azure_iot_device_DeviceClientOptions_ca
+  fullName: ca
+- uid: azure-iot-device.DeviceClientOptions.http
+  name: http
+  href: api/DeviceClientOptions.html#azure_iot_device_DeviceClientOptions_http
+  fullName: http
+- uid: azure-iot-device.DeviceClientOptions.mqtt
+  name: mqtt
+  href: api/DeviceClientOptions.html#azure_iot_device_DeviceClientOptions_mqtt
+  fullName: mqtt
+- uid: azure-iot-device.DeviceMethodExchange
+  name: DeviceMethodExchange
+  href: api/DeviceMethodExchange.html#azure_iot_device_DeviceMethodExchange
+  fullName: DeviceMethodExchange
+- uid: azure-iot-device.DeviceMethodExchange.request
+  name: request
+  href: api/DeviceMethodExchange.html#azure_iot_device_DeviceMethodExchange_request
+  fullName: request
+- uid: azure-iot-device.DeviceMethodExchange.response
+  name: response
+  href: api/DeviceMethodExchange.html#azure_iot_device_DeviceMethodExchange_response
+  fullName: response
+- uid: azure-iot-device.DeviceMethodRequest
+  name: DeviceMethodRequest
+  href: api/DeviceMethodRequest.html#azure_iot_device_DeviceMethodRequest
+  fullName: DeviceMethodRequest
+- uid: azure-iot-device.DeviceMethodRequest.constructor
+  name: DeviceMethodRequest(string, string, any)
+  href: api/DeviceMethodRequest.html#azure_iot_device_DeviceMethodRequest_constructor
+- uid: azure-iot-device.DeviceMethodRequest.methodName
+  name: methodName
+  href: api/DeviceMethodRequest.html#azure_iot_device_DeviceMethodRequest_methodName
+  fullName: methodName
+- uid: azure-iot-device.DeviceMethodRequest.payload
+  name: payload
+  href: api/DeviceMethodRequest.html#azure_iot_device_DeviceMethodRequest_payload
+  fullName: payload
+- uid: azure-iot-device.DeviceMethodRequest.requestId
+  name: requestId
+  href: api/DeviceMethodRequest.html#azure_iot_device_DeviceMethodRequest_requestId
+  fullName: requestId
+- uid: azure-iot-device.DeviceMethodResponse
+  name: DeviceMethodResponse
+  href: api/DeviceMethodResponse.html#azure_iot_device_DeviceMethodResponse
+  fullName: DeviceMethodResponse
+- uid: azure-iot-device.DeviceMethodResponse.constructor
+  name: DeviceMethodResponse(string, DeviceTransport)
+  href: api/DeviceMethodResponse.html#azure_iot_device_DeviceMethodResponse_constructor
+- uid: azure-iot-device.DeviceMethodResponse.isResponseComplete
+  name: isResponseComplete
+  href: api/DeviceMethodResponse.html#azure_iot_device_DeviceMethodResponse_isResponseComplete
+  fullName: isResponseComplete
+- uid: azure-iot-device.DeviceMethodResponse.payload
+  name: payload
+  href: api/DeviceMethodResponse.html#azure_iot_device_DeviceMethodResponse_payload
+  fullName: payload
+- uid: azure-iot-device.DeviceMethodResponse.requestId
+  name: requestId
+  href: api/DeviceMethodResponse.html#azure_iot_device_DeviceMethodResponse_requestId
+  fullName: requestId
+- uid: azure-iot-device.DeviceMethodResponse.send
+  name: send(number, any, ErrorCallback)
+  href: api/DeviceMethodResponse.html#azure_iot_device_DeviceMethodResponse_send
+- uid: azure-iot-device.DeviceMethodResponse.send_1
+  name: send(number, ErrorCallback)
+  href: api/DeviceMethodResponse.html#azure_iot_device_DeviceMethodResponse_send_1
+- uid: azure-iot-device.DeviceMethodResponse.send_2
+  name: send(number, any)
+  href: api/DeviceMethodResponse.html#azure_iot_device_DeviceMethodResponse_send_2
+- uid: azure-iot-device.DeviceMethodResponse.status
+  name: status
+  href: api/DeviceMethodResponse.html#azure_iot_device_DeviceMethodResponse_status
+  fullName: status
+- uid: azure-iot-device.DeviceTransport
+  name: DeviceTransport
+  href: api/DeviceTransport.html#azure_iot_device_DeviceTransport
+  fullName: DeviceTransport
+- uid: azure-iot-device.DeviceTransport.abandon
+  name: 'abandon(Message, (err?: Error, results?: results.MessageAbandoned) => void)'
+  href: api/DeviceTransport.html#azure_iot_device_DeviceTransport_abandon
+- uid: azure-iot-device.DeviceTransport.complete
+  name: 'complete(Message, (err?: Error, result?: results.MessageCompleted) => void)'
+  href: api/DeviceTransport.html#azure_iot_device_DeviceTransport_complete
+- uid: azure-iot-device.DeviceTransport.connect
+  name: 'connect((err?: Error, result?: results.Connected) => void)'
+  href: api/DeviceTransport.html#azure_iot_device_DeviceTransport_connect
+- uid: azure-iot-device.DeviceTransport.disableC2D
+  name: 'disableC2D((err?: Error) => void)'
+  href: api/DeviceTransport.html#azure_iot_device_DeviceTransport_disableC2D
+- uid: azure-iot-device.DeviceTransport.disableInputMessages
+  name: 'disableInputMessages((err?: Error) => void)'
+  href: api/DeviceTransport.html#azure_iot_device_DeviceTransport_disableInputMessages
+- uid: azure-iot-device.DeviceTransport.disableMethods
+  name: 'disableMethods((err?: Error) => void)'
+  href: api/DeviceTransport.html#azure_iot_device_DeviceTransport_disableMethods
+- uid: azure-iot-device.DeviceTransport.disableTwinDesiredPropertiesUpdates
+  name: 'disableTwinDesiredPropertiesUpdates((err?: Error) => void)'
+  href: api/DeviceTransport.html#azure_iot_device_DeviceTransport_disableTwinDesiredPropertiesUpdates
+- uid: azure-iot-device.DeviceTransport.disconnect
+  name: 'disconnect((err?: Error, result?: results.Disconnected) => void)'
+  href: api/DeviceTransport.html#azure_iot_device_DeviceTransport_disconnect
+- uid: azure-iot-device.DeviceTransport.enableC2D
+  name: 'enableC2D((err?: Error) => void)'
+  href: api/DeviceTransport.html#azure_iot_device_DeviceTransport_enableC2D
+- uid: azure-iot-device.DeviceTransport.enableInputMessages
+  name: 'enableInputMessages((err?: Error) => void)'
+  href: api/DeviceTransport.html#azure_iot_device_DeviceTransport_enableInputMessages
+- uid: azure-iot-device.DeviceTransport.enableMethods
+  name: 'enableMethods((err?: Error) => void)'
+  href: api/DeviceTransport.html#azure_iot_device_DeviceTransport_enableMethods
+- uid: azure-iot-device.DeviceTransport.enableTwinDesiredPropertiesUpdates
+  name: 'enableTwinDesiredPropertiesUpdates((err?: Error) => void)'
+  href: api/DeviceTransport.html#azure_iot_device_DeviceTransport_enableTwinDesiredPropertiesUpdates
+- uid: azure-iot-device.DeviceTransport.getTwin
+  name: 'getTwin((err?: Error, twin?: TwinProperties) => void)'
+  href: api/DeviceTransport.html#azure_iot_device_DeviceTransport_getTwin
+- uid: azure-iot-device.DeviceTransport.on
+  name: 'on("error", (err: Error) => void)'
+  href: api/DeviceTransport.html#azure_iot_device_DeviceTransport_on
+- uid: azure-iot-device.DeviceTransport.on_1
+  name: 'on("disconnect", (err?: Error) => void)'
+  href: api/DeviceTransport.html#azure_iot_device_DeviceTransport_on_1
+- uid: azure-iot-device.DeviceTransport.on_2
+  name: 'on("message", (msg: Message) => void)'
+  href: api/DeviceTransport.html#azure_iot_device_DeviceTransport_on_2
+- uid: azure-iot-device.DeviceTransport.on_3
+  name: 'on("twinDesiredPropertiesUpdate", (desiredProps: any) => void)'
+  href: api/DeviceTransport.html#azure_iot_device_DeviceTransport_on_3
+- uid: azure-iot-device.DeviceTransport.on_4
+  name: 'on("inputMessage", (inputName: string, msg: Message) => void)'
+  href: api/DeviceTransport.html#azure_iot_device_DeviceTransport_on_4
+- uid: azure-iot-device.DeviceTransport.onDeviceMethod
+  name: 'onDeviceMethod(string, (request: MethodMessage, response: DeviceMethodResponse) => void)'
+  href: api/DeviceTransport.html#azure_iot_device_DeviceTransport_onDeviceMethod
+- uid: azure-iot-device.DeviceTransport.reject
+  name: 'reject(Message, (err?: Error, results?: results.MessageRejected) => void)'
+  href: api/DeviceTransport.html#azure_iot_device_DeviceTransport_reject
+- uid: azure-iot-device.DeviceTransport.sendEvent
+  name: 'sendEvent(Message, (err?: Error, result?: results.MessageEnqueued) => void)'
+  href: api/DeviceTransport.html#azure_iot_device_DeviceTransport_sendEvent
+- uid: azure-iot-device.DeviceTransport.sendEventBatch
+  name: 'sendEventBatch(Message[], (err?: Error, result?: results.MessageEnqueued) => void)'
+  href: api/DeviceTransport.html#azure_iot_device_DeviceTransport_sendEventBatch
+- uid: azure-iot-device.DeviceTransport.sendMethodResponse
+  name: 'sendMethodResponse(DeviceMethodResponse, (err?: Error, result?: any) => void)'
+  href: api/DeviceTransport.html#azure_iot_device_DeviceTransport_sendMethodResponse
+- uid: azure-iot-device.DeviceTransport.sendOutputEvent
+  name: 'sendOutputEvent(string, Message, (err?: Error, result?: results.MessageEnqueued) => void)'
+  href: api/DeviceTransport.html#azure_iot_device_DeviceTransport_sendOutputEvent
+- uid: azure-iot-device.DeviceTransport.sendOutputEventBatch
+  name: 'sendOutputEventBatch(string, Message[], (err?: Error, result?: results.MessageEnqueued) => void)'
+  href: api/DeviceTransport.html#azure_iot_device_DeviceTransport_sendOutputEventBatch
+- uid: azure-iot-device.DeviceTransport.setOptions
+  name: 'setOptions(DeviceClientOptions, (err?: Error, result?: results.TransportConfigured) => void)'
+  href: api/DeviceTransport.html#azure_iot_device_DeviceTransport_setOptions
+- uid: azure-iot-device.DeviceTransport.updateSharedAccessSignature
+  name: 'updateSharedAccessSignature(string, (err?: Error, result?: results.SharedAccessSignatureUpdated) => void)'
+  href: api/DeviceTransport.html#azure_iot_device_DeviceTransport_updateSharedAccessSignature
+- uid: azure-iot-device.DeviceTransport.updateTwinReportedProperties
+  name: 'updateTwinReportedProperties(any, (err?: Error) => void)'
+  href: api/DeviceTransport.html#azure_iot_device_DeviceTransport_updateTwinReportedProperties
+- uid: azure-iot-device.getUserAgentString
+  name: getUserAgentString(NoErrorCallback<string>)
+  href: api/getUserAgentString.html#azure_iot_device_getUserAgentString
+- uid: azure-iot-device.getUserAgentString_1
+  name: getUserAgentString()
+  href: api/getUserAgentString_1.html#azure_iot_device_getUserAgentString_1
+- uid: azure-iot-device.HttpReceiverOptions
+  name: HttpReceiverOptions
+  href: api/HttpReceiverOptions.html#azure_iot_device_HttpReceiverOptions
+  fullName: HttpReceiverOptions
+- uid: azure-iot-device.HttpReceiverOptions.at
+  name: at
+  href: api/HttpReceiverOptions.html#azure_iot_device_HttpReceiverOptions_at
+  fullName: at
+- uid: azure-iot-device.HttpReceiverOptions.cron
+  name: cron
+  href: api/HttpReceiverOptions.html#azure_iot_device_HttpReceiverOptions_cron
+  fullName: cron
+- uid: azure-iot-device.HttpReceiverOptions.drain
+  name: drain
+  href: api/HttpReceiverOptions.html#azure_iot_device_HttpReceiverOptions_drain
+  fullName: drain
+- uid: azure-iot-device.HttpReceiverOptions.interval
+  name: interval
+  href: api/HttpReceiverOptions.html#azure_iot_device_HttpReceiverOptions_interval
+  fullName: interval
+- uid: azure-iot-device.HttpReceiverOptions.manualPolling
+  name: manualPolling
+  href: api/HttpReceiverOptions.html#azure_iot_device_HttpReceiverOptions_manualPolling
+  fullName: manualPolling
+- uid: azure-iot-device.HttpTransportOptions
+  name: HttpTransportOptions
+  href: api/HttpTransportOptions.html#azure_iot_device_HttpTransportOptions
+  fullName: HttpTransportOptions
+- uid: azure-iot-device.HttpTransportOptions.agent
+  name: agent
+  href: api/HttpTransportOptions.html#azure_iot_device_HttpTransportOptions_agent
+  fullName: agent
+- uid: azure-iot-device.HttpTransportOptions.receivePolicy
+  name: receivePolicy
+  href: api/HttpTransportOptions.html#azure_iot_device_HttpTransportOptions_receivePolicy
+  fullName: receivePolicy
+- uid: azure-iot-device.IotEdgeAuthenticationProvider
+  name: IotEdgeAuthenticationProvider
+  href: api/IotEdgeAuthenticationProvider.html#azure_iot_device_IotEdgeAuthenticationProvider
+  fullName: IotEdgeAuthenticationProvider
+- uid: azure-iot-device.IotEdgeAuthenticationProvider.getTrustBundle
+  name: 'getTrustBundle((err?: Error, ca?: string) => void)'
+  href: api/IotEdgeAuthenticationProvider.html#azure_iot_device_IotEdgeAuthenticationProvider_getTrustBundle
+- uid: azure-iot-device.MethodCallback
+  name: MethodCallback
+  href: api/MethodCallback.html#azure_iot_device_MethodCallback
+  fullName: MethodCallback
+- uid: azure-iot-device.MethodParams
+  name: MethodParams
+  href: api/MethodParams.html#azure_iot_device_MethodParams
+  fullName: MethodParams
+- uid: azure-iot-device.MethodParams.connectTimeoutInSeconds
+  name: connectTimeoutInSeconds
+  href: api/MethodParams.html#azure_iot_device_MethodParams_connectTimeoutInSeconds
+  fullName: connectTimeoutInSeconds
+- uid: azure-iot-device.MethodParams.methodName
+  name: methodName
+  href: api/MethodParams.html#azure_iot_device_MethodParams_methodName
+  fullName: methodName
+- uid: azure-iot-device.MethodParams.payload
+  name: payload
+  href: api/MethodParams.html#azure_iot_device_MethodParams_payload
+  fullName: payload
+- uid: azure-iot-device.MethodParams.responseTimeoutInSeconds
+  name: responseTimeoutInSeconds
+  href: api/MethodParams.html#azure_iot_device_MethodParams_responseTimeoutInSeconds
+  fullName: responseTimeoutInSeconds
+- uid: azure-iot-device.MethodResult
+  name: MethodResult
+  href: api/MethodResult.html#azure_iot_device_MethodResult
+  fullName: MethodResult
+- uid: azure-iot-device.MethodResult.payload
+  name: payload
+  href: api/MethodResult.html#azure_iot_device_MethodResult_payload
+  fullName: payload
+- uid: azure-iot-device.MethodResult.status
+  name: status
+  href: api/MethodResult.html#azure_iot_device_MethodResult_status
+  fullName: status
+- uid: azure-iot-device.ModuleClient
+  name: ModuleClient
+  href: api/ModuleClient.html#azure_iot_device_ModuleClient
+  fullName: ModuleClient
+- uid: azure-iot-device.ModuleClient.close
+  name: close(Callback<results.Disconnected>)
+  href: api/ModuleClient.html#azure_iot_device_ModuleClient_close
+- uid: azure-iot-device.ModuleClient.close_1
+  name: close()
+  href: api/ModuleClient.html#azure_iot_device_ModuleClient_close_1
+- uid: azure-iot-device.ModuleClient.fromAuthenticationProvider
+  name: fromAuthenticationProvider(AuthenticationProvider, any)
+  href: api/ModuleClient.html#azure_iot_device_ModuleClient_fromAuthenticationProvider
+- uid: azure-iot-device.ModuleClient.fromConnectionString
+  name: fromConnectionString(string, any)
+  href: api/ModuleClient.html#azure_iot_device_ModuleClient_fromConnectionString
+- uid: azure-iot-device.ModuleClient.fromEnvironment
+  name: fromEnvironment(any, Callback<ModuleClient>)
+  href: api/ModuleClient.html#azure_iot_device_ModuleClient_fromEnvironment
+- uid: azure-iot-device.ModuleClient.fromEnvironment_1
+  name: fromEnvironment(any)
+  href: api/ModuleClient.html#azure_iot_device_ModuleClient_fromEnvironment_1
+- uid: azure-iot-device.ModuleClient.fromSharedAccessSignature
+  name: fromSharedAccessSignature(string, any)
+  href: api/ModuleClient.html#azure_iot_device_ModuleClient_fromSharedAccessSignature
+- uid: azure-iot-device.ModuleClient.invokeMethod
+  name: invokeMethod(string, MethodParams, Callback<MethodResult>)
+  href: api/ModuleClient.html#azure_iot_device_ModuleClient_invokeMethod
+- uid: azure-iot-device.ModuleClient.invokeMethod_1
+  name: invokeMethod(string, string, MethodParams, Callback<MethodResult>)
+  href: api/ModuleClient.html#azure_iot_device_ModuleClient_invokeMethod_1
+- uid: azure-iot-device.ModuleClient.invokeMethod_2
+  name: invokeMethod(string, MethodParams)
+  href: api/ModuleClient.html#azure_iot_device_ModuleClient_invokeMethod_2
+- uid: azure-iot-device.ModuleClient.invokeMethod_3
+  name: invokeMethod(string, string, MethodParams)
+  href: api/ModuleClient.html#azure_iot_device_ModuleClient_invokeMethod_3
+- uid: azure-iot-device.ModuleClient.onMethod
+  name: onMethod(string, DoubleValueCallback<DeviceMethodRequest, DeviceMethodResponse>)
+  href: api/ModuleClient.html#azure_iot_device_ModuleClient_onMethod
+- uid: azure-iot-device.ModuleClient.sendOutputEvent
+  name: sendOutputEvent(string, Message, Callback<results.MessageEnqueued>)
+  href: api/ModuleClient.html#azure_iot_device_ModuleClient_sendOutputEvent
+- uid: azure-iot-device.ModuleClient.sendOutputEvent_1
+  name: sendOutputEvent(string, Message)
+  href: api/ModuleClient.html#azure_iot_device_ModuleClient_sendOutputEvent_1
+- uid: azure-iot-device.ModuleClient.sendOutputEventBatch
+  name: sendOutputEventBatch(string, Message[], Callback<results.MessageEnqueued>)
+  href: api/ModuleClient.html#azure_iot_device_ModuleClient_sendOutputEventBatch
+- uid: azure-iot-device.ModuleClient.sendOutputEventBatch_1
+  name: sendOutputEventBatch(string, Message[])
+  href: api/ModuleClient.html#azure_iot_device_ModuleClient_sendOutputEventBatch_1
+- uid: azure-iot-device.ModuleClient.setOptions
+  name: setOptions(DeviceClientOptions, Callback<results.TransportConfigured>)
+  href: api/ModuleClient.html#azure_iot_device_ModuleClient_setOptions
+- uid: azure-iot-device.ModuleClient.setOptions_1
+  name: setOptions(DeviceClientOptions)
+  href: api/ModuleClient.html#azure_iot_device_ModuleClient_setOptions_1
+- uid: azure-iot-device.MqttTransportOptions
+  name: MqttTransportOptions
+  href: api/MqttTransportOptions.html#azure_iot_device_MqttTransportOptions
+  fullName: MqttTransportOptions
+- uid: azure-iot-device.MqttTransportOptions.webSocketAgent
+  name: webSocketAgent
+  href: api/MqttTransportOptions.html#azure_iot_device_MqttTransportOptions_webSocketAgent
+  fullName: webSocketAgent
+- uid: azure-iot-device.parse
+  name: parse(string)
+  href: api/parse.html#azure_iot_device_parse
+- uid: azure-iot-device.SharedAccessKeyAuthenticationProvider
+  name: SharedAccessKeyAuthenticationProvider
+  href: api/SharedAccessKeyAuthenticationProvider.html#azure_iot_device_SharedAccessKeyAuthenticationProvider
+  fullName: SharedAccessKeyAuthenticationProvider
+- uid: azure-iot-device.SharedAccessKeyAuthenticationProvider.fromConnectionString
+  name: fromConnectionString(string, number, number)
+  href: api/SharedAccessKeyAuthenticationProvider.html#azure_iot_device_SharedAccessKeyAuthenticationProvider_fromConnectionString
+- uid: azure-iot-device.SharedAccessKeyAuthenticationProvider.getDeviceCredentials
+  name: getDeviceCredentials(Callback<TransportConfig>)
+  href: api/SharedAccessKeyAuthenticationProvider.html#azure_iot_device_SharedAccessKeyAuthenticationProvider_getDeviceCredentials
+- uid: azure-iot-device.SharedAccessKeyAuthenticationProvider.getDeviceCredentials_1
+  name: getDeviceCredentials()
+  href: api/SharedAccessKeyAuthenticationProvider.html#azure_iot_device_SharedAccessKeyAuthenticationProvider_getDeviceCredentials_1
+- uid: azure-iot-device.SharedAccessKeyAuthenticationProvider.stop
+  name: stop()
+  href: api/SharedAccessKeyAuthenticationProvider.html#azure_iot_device_SharedAccessKeyAuthenticationProvider_stop
+- uid: azure-iot-device.SharedAccessKeyAuthenticationProvider.type
+  name: type
+  href: api/SharedAccessKeyAuthenticationProvider.html#azure_iot_device_SharedAccessKeyAuthenticationProvider_type
+  fullName: type
+- uid: azure-iot-device.SharedAccessSignatureAuthenticationProvider
+  name: SharedAccessSignatureAuthenticationProvider
+  href: api/SharedAccessSignatureAuthenticationProvider.html#azure_iot_device_SharedAccessSignatureAuthenticationProvider
+  fullName: SharedAccessSignatureAuthenticationProvider
+- uid: azure-iot-device.SharedAccessSignatureAuthenticationProvider.fromSharedAccessSignature
+  name: fromSharedAccessSignature(string)
+  href: api/SharedAccessSignatureAuthenticationProvider.html#azure_iot_device_SharedAccessSignatureAuthenticationProvider_fromSharedAccessSignature
+- uid: azure-iot-device.SharedAccessSignatureAuthenticationProvider.getDeviceCredentials
+  name: getDeviceCredentials(Callback<TransportConfig>)
+  href: api/SharedAccessSignatureAuthenticationProvider.html#azure_iot_device_SharedAccessSignatureAuthenticationProvider_getDeviceCredentials
+- uid: azure-iot-device.SharedAccessSignatureAuthenticationProvider.getDeviceCredentials_1
+  name: getDeviceCredentials()
+  href: api/SharedAccessSignatureAuthenticationProvider.html#azure_iot_device_SharedAccessSignatureAuthenticationProvider_getDeviceCredentials_1
+- uid: azure-iot-device.SharedAccessSignatureAuthenticationProvider.stop
+  name: stop()
+  href: api/SharedAccessSignatureAuthenticationProvider.html#azure_iot_device_SharedAccessSignatureAuthenticationProvider_stop
+- uid: azure-iot-device.SharedAccessSignatureAuthenticationProvider.type
+  name: type
+  href: api/SharedAccessSignatureAuthenticationProvider.html#azure_iot_device_SharedAccessSignatureAuthenticationProvider_type
+  fullName: type
+- uid: azure-iot-device.SharedAccessSignatureAuthenticationProvider.updateSharedAccessSignature
+  name: updateSharedAccessSignature(string)
+  href: api/SharedAccessSignatureAuthenticationProvider.html#azure_iot_device_SharedAccessSignatureAuthenticationProvider_updateSharedAccessSignature
+- uid: azure-iot-device.TransportCtor
+  name: TransportCtor
+  href: api/TransportCtor.html#azure_iot_device_TransportCtor
+  fullName: TransportCtor
+- uid: azure-iot-device.Twin
+  name: Twin
+  href: api/Twin.html#azure_iot_device_Twin
+  fullName: Twin
+- uid: azure-iot-device.Twin.desiredPath
+  name: desiredPath
+  href: api/Twin.html#azure_iot_device_Twin_desiredPath
+  fullName: desiredPath
+- uid: azure-iot-device.Twin.desiredPropertiesUpdatesEnabled
+  name: desiredPropertiesUpdatesEnabled
+  href: api/Twin.html#azure_iot_device_Twin_desiredPropertiesUpdatesEnabled
+  fullName: desiredPropertiesUpdatesEnabled
+- uid: azure-iot-device.Twin.errorEvent
+  name: errorEvent
+  href: api/Twin.html#azure_iot_device_Twin_errorEvent
+  fullName: errorEvent
+- uid: azure-iot-device.Twin.get
+  name: get(Callback<Twin>)
+  href: api/Twin.html#azure_iot_device_Twin_get
+- uid: azure-iot-device.Twin.get_1
+  name: get()
+  href: api/Twin.html#azure_iot_device_Twin_get_1
+- uid: azure-iot-device.Twin.properties
+  name: properties
+  href: api/Twin.html#azure_iot_device_Twin_properties
+  fullName: properties
+- uid: azure-iot-device.TwinProperties
+  name: TwinProperties
+  href: api/TwinProperties.html#azure_iot_device_TwinProperties
+  fullName: TwinProperties
+- uid: azure-iot-device.TwinProperties.desired
+  name: desired
+  href: api/TwinProperties.html#azure_iot_device_TwinProperties_desired
+  fullName: desired
+- uid: azure-iot-device.TwinProperties.reported
+  name: reported
+  href: api/TwinProperties.html#azure_iot_device_TwinProperties_reported
+  fullName: reported
+- uid: azure-iot-device.X509AuthenticationProvider
+  name: X509AuthenticationProvider
+  href: api/X509AuthenticationProvider.html#azure_iot_device_X509AuthenticationProvider
+  fullName: X509AuthenticationProvider
+- uid: azure-iot-device.X509AuthenticationProvider.fromX509Options
+  name: fromX509Options(string, string, X509)
+  href: api/X509AuthenticationProvider.html#azure_iot_device_X509AuthenticationProvider_fromX509Options
+- uid: azure-iot-device.X509AuthenticationProvider.getDeviceCredentials
+  name: getDeviceCredentials(Callback<TransportConfig>)
+  href: api/X509AuthenticationProvider.html#azure_iot_device_X509AuthenticationProvider_getDeviceCredentials
+- uid: azure-iot-device.X509AuthenticationProvider.getDeviceCredentials_1
+  name: getDeviceCredentials()
+  href: api/X509AuthenticationProvider.html#azure_iot_device_X509AuthenticationProvider_getDeviceCredentials_1
+- uid: azure-iot-device.X509AuthenticationProvider.setX509Options
+  name: setX509Options(X509)
+  href: api/X509AuthenticationProvider.html#azure_iot_device_X509AuthenticationProvider_setX509Options
+- uid: azure-iot-device.X509AuthenticationProvider.type
+  name: type
+  href: api/X509AuthenticationProvider.html#azure_iot_device_X509AuthenticationProvider_type
+  fullName: type

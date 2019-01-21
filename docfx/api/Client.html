@@ -1,0 +1,553 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class Client
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class Client
+   ">
+    <meta name="generator" content="docfx 2.40.7.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="azure-iot-device.Client">
+  
+  
+  <h1 id="azure_iot_device_Client" data-uid="azure-iot-device.Client">Class Client
+  </h1>
+  <div class="markdown level0 summary"><p>IoT Hub device client used to connect a device with an Azure IoT hub.
+Users of the SDK should call one of the factory methods,
+<a class="xref" href="Client.html#azure_iot_device_Client_fromConnectionString">fromConnectionString</a>
+or <a class="xref" href="Client.html#azure_iot_device_Client_fromSharedAccessSignature">fromSharedAccessSignature</a>
+to create an IoT Hub device client.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <h4 id="azure_iot_device_Client_constructor" data-uid="azure-iot-device.Client.constructor">Client(DeviceTransport, string, BlobUploadClient)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">new Client(transport: DeviceTransport, connStr?: string, blobUploadClient?: BlobUploadClient)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DeviceTransport.html#azure_iot_device_DeviceTransport">DeviceTransport</a></td>
+        <td><em>transport</em></td>
+        <td>
+          <p>An object that implements the interface
+                                   expected of a transport object, e.g.,
+                                   <a href="xref:azure-iot-device-http.Http">Http</a>.</p>
+
+          
+        </td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><em>connStr</em></td>
+        <td>
+          <p>A connection string (optional: when not provided, updateSharedAccessSignature must be called to set the SharedAccessSignature token directly).</p>
+
+          
+        </td>
+      </tr>
+      <tr>
+        <td><span class="xref">BlobUploadClient</span></td>
+        <td><em>blobUploadClient</em></td>
+        <td>
+          <p>An object that is capable of uploading a stream to a blob.</p>
+
+          
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <h4 id="azure_iot_device_Client_close_1" data-uid="azure-iot-device.Client.close_1">close()</h4>
+  <div class="markdown level1 summary"><p>Closes the transport connection and destroys the client resources.
+<em>Note: After calling this method the Client object cannot be reused.</em></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">function close()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Promise&lt;results.Disconnected&gt;</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="azure_iot_device_Client_close" data-uid="azure-iot-device.Client.close">close(Callback&lt;results.Disconnected&gt;)</h4>
+  <div class="markdown level1 summary"><p>Closes the transport connection and destroys the client resources.
+<em>Note: After calling this method the Client object cannot be reused.</em></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">function close(closeCallback: Callback&lt;results.Disconnected&gt;)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Callback&lt;results.Disconnected&gt;</span></td>
+        <td><em>closeCallback</em></td>
+        <td>
+          
+          
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="azure_iot_device_Client_fromAuthenticationProvider" data-uid="azure-iot-device.Client.fromAuthenticationProvider">fromAuthenticationProvider(AuthenticationProvider, any)</h4>
+  <div class="markdown level1 summary"><p>Creates an IoT Hub device client from the given authentication method and using the given transport type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">static function fromAuthenticationProvider(authenticationProvider: AuthenticationProvider, transportCtor: any)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">AuthenticationProvider</span></td>
+        <td><em>authenticationProvider</em></td>
+        <td>
+          <p>Object used to obtain the authentication parameters for the IoT hub.</p>
+
+          
+        </td>
+      </tr>
+      <tr>
+        <td><span class="xref">any</span></td>
+        <td><em>transportCtor</em></td>
+        <td>
+          <p>Transport protocol used to connect to IoT hub.</p>
+
+          
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Client.html#azure_iot_device_Client">Client</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="azure_iot_device_Client_fromConnectionString" data-uid="azure-iot-device.Client.fromConnectionString">fromConnectionString(string, any)</h4>
+  <div class="markdown level1 summary"><p>Creates an IoT Hub device client from the given connection string using the given transport type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">static function fromConnectionString(connStr: string, transportCtor: any)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><em>connStr</em></td>
+        <td>
+          <p>A connection string which encapsulates &quot;device connect&quot; permissions on an IoT hub.</p>
+
+          
+        </td>
+      </tr>
+      <tr>
+        <td><span class="xref">any</span></td>
+        <td><em>transportCtor</em></td>
+        <td>
+          <p>A transport constructor.</p>
+
+          
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Client.html#azure_iot_device_Client">Client</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="azure_iot_device_Client_fromSharedAccessSignature" data-uid="azure-iot-device.Client.fromSharedAccessSignature">fromSharedAccessSignature(string, any)</h4>
+  <div class="markdown level1 summary"><p>Creates an IoT Hub device client from the given
+                   shared access signature using the given transport type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">static function fromSharedAccessSignature(sharedAccessSignature: string, transportCtor: any)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><em>sharedAccessSignature</em></td>
+        <td>
+          <p>A shared access signature which encapsulates &quot;device
+                                 connect&quot; permissions on an IoT hub.</p>
+
+          
+        </td>
+      </tr>
+      <tr>
+        <td><span class="xref">any</span></td>
+        <td><em>transportCtor</em></td>
+        <td>
+          
+          
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Client.html#azure_iot_device_Client">Client</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="azure_iot_device_Client_onDeviceMethod" data-uid="azure-iot-device.Client.onDeviceMethod">onDeviceMethod(string, (request: DeviceMethodRequest, response: DeviceMethodResponse) =&gt; void)</h4>
+  <div class="markdown level1 summary"><p>Registers a callback for a method named <code>methodName</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">function onDeviceMethod(methodName: string, callback: (request: DeviceMethodRequest, response: DeviceMethodResponse) =&gt; void)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><em>methodName</em></td>
+        <td>
+          <p>Name of the method that will be handled by the callback</p>
+
+          
+        </td>
+      </tr>
+      <tr>
+        <td><span class="xref">(request: DeviceMethodRequest, response: DeviceMethodResponse) =&gt; void</span></td>
+        <td><em>callback</em></td>
+        <td>
+          <p>Function that shall be called whenever a method request for the method called <code>methodName</code> is received.</p>
+
+          
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="azure_iot_device_Client_uploadToBlob_1" data-uid="azure-iot-device.Client.uploadToBlob_1">uploadToBlob(string, Stream, number)</h4>
+  <div class="markdown level1 summary"><p>The <code>uploadToBlob</code> method uploads a stream to a blob.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">function uploadToBlob(blobName: string, stream: Stream, streamLength: number)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><em>blobName</em></td>
+        <td>
+          
+          
+        </td>
+      </tr>
+      <tr>
+        <td><span class="xref">Stream</span></td>
+        <td><em>stream</em></td>
+        <td>
+          
+          
+        </td>
+      </tr>
+      <tr>
+        <td><span class="xref">number</span></td>
+        <td><em>streamLength</em></td>
+        <td>
+          
+          
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Promise&lt;void&gt;</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="azure_iot_device_Client_uploadToBlob" data-uid="azure-iot-device.Client.uploadToBlob">uploadToBlob(string, Stream, number, ErrorCallback)</h4>
+  <div class="markdown level1 summary"><p>The <code>uploadToBlob</code> method uploads a stream to a blob.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">function uploadToBlob(blobName: string, stream: Stream, streamLength: number, callback: ErrorCallback)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><em>blobName</em></td>
+        <td>
+          <p>The name to use for the blob that will be created with the content of the stream.</p>
+
+          
+        </td>
+      </tr>
+      <tr>
+        <td><span class="xref">Stream</span></td>
+        <td><em>stream</em></td>
+        <td>
+          <p>The data to that should be uploaded to the blob.</p>
+
+          
+        </td>
+      </tr>
+      <tr>
+        <td><span class="xref">number</span></td>
+        <td><em>streamLength</em></td>
+        <td>
+          <p>The size of the data to that should be uploaded to the blob.</p>
+
+          
+        </td>
+      </tr>
+      <tr>
+        <td><span class="xref">ErrorCallback</span></td>
+        <td><em>callback</em></td>
+        <td>
+          
+          
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

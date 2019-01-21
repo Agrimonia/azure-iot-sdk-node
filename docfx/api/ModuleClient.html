@@ -1,0 +1,987 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ModuleClient
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ModuleClient
+   ">
+    <meta name="generator" content="docfx 2.40.7.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="azure-iot-device.ModuleClient">
+  
+  
+  <h1 id="azure_iot_device_ModuleClient" data-uid="azure-iot-device.ModuleClient">Class ModuleClient
+  </h1>
+  <div class="markdown level0 summary"><p>IoT Hub device client used to connect a device with an Azure IoT hub.
+Users of the SDK should call one of the factory methods,
+<a class="xref" href="Client.html#azure_iot_device_Client_fromConnectionString">fromConnectionString</a>
+or <a class="xref" href="Client.html#azure_iot_device_Client_fromSharedAccessSignature">fromSharedAccessSignature</a>
+to create an IoT Hub device client.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <h4 id="azure_iot_device_ModuleClient_close_1" data-uid="azure-iot-device.ModuleClient.close_1">close()</h4>
+  <div class="markdown level1 summary"><p>Closes the transport connection and destroys the client resources.
+<em>Note: After calling this method the ModuleClient object cannot be reused.</em></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">function close()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Promise&lt;results.Disconnected&gt;</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="azure_iot_device_ModuleClient_close" data-uid="azure-iot-device.ModuleClient.close">close(Callback&lt;results.Disconnected&gt;)</h4>
+  <div class="markdown level1 summary"><p>Closes the transport connection and destroys the client resources.
+<em>Note: After calling this method the ModuleClient object cannot be reused.</em></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">function close(closeCallback: Callback&lt;results.Disconnected&gt;)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Callback&lt;results.Disconnected&gt;</span></td>
+        <td><em>closeCallback</em></td>
+        <td>
+          
+          
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="azure_iot_device_ModuleClient_fromAuthenticationProvider" data-uid="azure-iot-device.ModuleClient.fromAuthenticationProvider">fromAuthenticationProvider(AuthenticationProvider, any)</h4>
+  <div class="markdown level1 summary"><p>Creates an IoT Hub module client from the given authentication method and using the given transport type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">static function fromAuthenticationProvider(authenticationProvider: AuthenticationProvider, transportCtor: any)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">AuthenticationProvider</span></td>
+        <td><em>authenticationProvider</em></td>
+        <td>
+          <p>Object used to obtain the authentication parameters for the IoT hub.</p>
+
+          
+        </td>
+      </tr>
+      <tr>
+        <td><span class="xref">any</span></td>
+        <td><em>transportCtor</em></td>
+        <td>
+          <p>Transport protocol used to connect to IoT hub.</p>
+
+          
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ModuleClient.html#azure_iot_device_ModuleClient">ModuleClient</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="azure_iot_device_ModuleClient_fromConnectionString" data-uid="azure-iot-device.ModuleClient.fromConnectionString">fromConnectionString(string, any)</h4>
+  <div class="markdown level1 summary"><p>Creates an IoT Hub device client from the given connection string using the given transport type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">static function fromConnectionString(connStr: string, transportCtor: any)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><em>connStr</em></td>
+        <td>
+          <p>A connection string which encapsulates &quot;device connect&quot; permissions on an IoT hub.</p>
+
+          
+        </td>
+      </tr>
+      <tr>
+        <td><span class="xref">any</span></td>
+        <td><em>transportCtor</em></td>
+        <td>
+          <p>A transport constructor.</p>
+
+          
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ModuleClient.html#azure_iot_device_ModuleClient">ModuleClient</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="azure_iot_device_ModuleClient_fromEnvironment_1" data-uid="azure-iot-device.ModuleClient.fromEnvironment_1">fromEnvironment(any)</h4>
+  <div class="markdown level1 summary"><p>Creates an IoT Hub module client by using configuration information from the environment.
+If an environment variable called <code>EdgeHubConnectionString</code> or <code>IotHubConnectionString</code> exists, then that value is used and behavior is identical
+to calling <code>fromConnectionString</code> passing that in. If those environment variables do not exist then the following variables MUST be defined:</p>
+<pre><code>- IOTEDGE_WORKLOADURI          URI for iotedged&#39;s workload API
+- IOTEDGE_DEVICEID             Device identifier
+- IOTEDGE_MODULEID             Module identifier
+- IOTEDGE_MODULEGENERATIONID   Module generation identifier
+- IOTEDGE_IOTHUBHOSTNAME       IoT Hub host name
+- IOTEDGE_AUTHSCHEME           Authentication scheme to use; must be &quot;sasToken&quot;
+</code></pre></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">static function fromEnvironment(transportCtor: any)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">any</span></td>
+        <td><em>transportCtor</em></td>
+        <td>
+          
+          
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Promise&lt;<a class="xref" href="ModuleClient.html#azure_iot_device_ModuleClient">ModuleClient</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="azure_iot_device_ModuleClient_fromEnvironment" data-uid="azure-iot-device.ModuleClient.fromEnvironment">fromEnvironment(any, Callback&lt;ModuleClient&gt;)</h4>
+  <div class="markdown level1 summary"><p>Creates an IoT Hub module client by using configuration information from the environment.
+If an environment variable called <code>EdgeHubConnectionString</code> or <code>IotHubConnectionString</code> exists, then that value is used and behavior is identical
+to calling <code>fromConnectionString</code> passing that in. If those environment variables do not exist then the following variables MUST be defined:</p>
+<pre><code>- IOTEDGE_WORKLOADURI          URI for iotedged&#39;s workload API
+- IOTEDGE_DEVICEID             Device identifier
+- IOTEDGE_MODULEID             Module identifier
+- IOTEDGE_MODULEGENERATIONID   Module generation identifier
+- IOTEDGE_IOTHUBHOSTNAME       IoT Hub host name
+- IOTEDGE_AUTHSCHEME           Authentication scheme to use; must be &quot;sasToken&quot;
+</code></pre></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">static function fromEnvironment(transportCtor: any, callback: Callback&lt;ModuleClient&gt;)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">any</span></td>
+        <td><em>transportCtor</em></td>
+        <td>
+          <p>Transport protocol used to connect to IoT hub.</p>
+
+          
+        </td>
+      </tr>
+      <tr>
+        <td>Callback&lt;<a class="xref" href="ModuleClient.html#azure_iot_device_ModuleClient">ModuleClient</a>&gt;</td>
+        <td><em>callback</em></td>
+        <td>
+          
+          
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="azure_iot_device_ModuleClient_fromSharedAccessSignature" data-uid="azure-iot-device.ModuleClient.fromSharedAccessSignature">fromSharedAccessSignature(string, any)</h4>
+  <div class="markdown level1 summary"><p>Creates an IoT Hub module client from the given shared access signature using the given transport type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">static function fromSharedAccessSignature(sharedAccessSignature: string, transportCtor: any)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><em>sharedAccessSignature</em></td>
+        <td>
+          <p>A shared access signature which encapsulates &quot;device
+                                 connect&quot; permissions on an IoT hub.</p>
+
+          
+        </td>
+      </tr>
+      <tr>
+        <td><span class="xref">any</span></td>
+        <td><em>transportCtor</em></td>
+        <td>
+          
+          
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ModuleClient.html#azure_iot_device_ModuleClient">ModuleClient</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="azure_iot_device_ModuleClient_invokeMethod_2" data-uid="azure-iot-device.ModuleClient.invokeMethod_2">invokeMethod(string, MethodParams)</h4>
+  <div class="markdown level1 summary"><p>Invokes a method on a downstream device or on another module on the same Edge device. Please note that this feature only works when
+the module is being run as part of an Edge device.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">function invokeMethod(deviceId: string, methodParams: MethodParams)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><em>deviceId</em></td>
+        <td>
+          
+          
+        </td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MethodParams.html#azure_iot_device_MethodParams">MethodParams</a></td>
+        <td><em>methodParams</em></td>
+        <td>
+          
+          
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Promise&lt;<a class="xref" href="MethodResult.html#azure_iot_device_MethodResult">MethodResult</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="azure_iot_device_ModuleClient_invokeMethod" data-uid="azure-iot-device.ModuleClient.invokeMethod">invokeMethod(string, MethodParams, Callback&lt;MethodResult&gt;)</h4>
+  <div class="markdown level1 summary"><p>Invokes a method on a downstream device or on another module on the same Edge device. Please note that this feature only works when
+the module is being run as part of an Edge device.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">function invokeMethod(deviceId: string, methodParams: MethodParams, callback: Callback&lt;MethodResult&gt;)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><em>deviceId</em></td>
+        <td>
+          <p>target device identifier</p>
+
+          
+        </td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MethodParams.html#azure_iot_device_MethodParams">MethodParams</a></td>
+        <td><em>methodParams</em></td>
+        <td>
+          <p>parameters of the direct method call</p>
+
+          
+        </td>
+      </tr>
+      <tr>
+        <td>Callback&lt;<a class="xref" href="MethodResult.html#azure_iot_device_MethodResult">MethodResult</a>&gt;</td>
+        <td><em>callback</em></td>
+        <td>
+          
+          
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="azure_iot_device_ModuleClient_invokeMethod_3" data-uid="azure-iot-device.ModuleClient.invokeMethod_3">invokeMethod(string, string, MethodParams)</h4>
+  <div class="markdown level1 summary"><p>Invokes a method on a downstream device or on another module on the same Edge device. Please note that this feature only works when
+the module is being run as part of an Edge device.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">function invokeMethod(deviceId: string, moduleId: string, methodParams: MethodParams)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><em>deviceId</em></td>
+        <td>
+          
+          
+        </td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><em>moduleId</em></td>
+        <td>
+          
+          
+        </td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MethodParams.html#azure_iot_device_MethodParams">MethodParams</a></td>
+        <td><em>methodParams</em></td>
+        <td>
+          
+          
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Promise&lt;<a class="xref" href="MethodResult.html#azure_iot_device_MethodResult">MethodResult</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="azure_iot_device_ModuleClient_invokeMethod_1" data-uid="azure-iot-device.ModuleClient.invokeMethod_1">invokeMethod(string, string, MethodParams, Callback&lt;MethodResult&gt;)</h4>
+  <div class="markdown level1 summary"><p>Invokes a method on a downstream device or on another module on the same Edge device. Please note that this feature only works when
+the module is being run as part of an Edge device.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">function invokeMethod(deviceId: string, moduleId: string, methodParams: MethodParams, callback: Callback&lt;MethodResult&gt;)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><em>deviceId</em></td>
+        <td>
+          
+          
+        </td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><em>moduleId</em></td>
+        <td>
+          
+          
+        </td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MethodParams.html#azure_iot_device_MethodParams">MethodParams</a></td>
+        <td><em>methodParams</em></td>
+        <td>
+          
+          
+        </td>
+      </tr>
+      <tr>
+        <td>Callback&lt;<a class="xref" href="MethodResult.html#azure_iot_device_MethodResult">MethodResult</a>&gt;</td>
+        <td><em>callback</em></td>
+        <td>
+          
+          
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="azure_iot_device_ModuleClient_onMethod" data-uid="azure-iot-device.ModuleClient.onMethod">onMethod(string, DoubleValueCallback&lt;DeviceMethodRequest, DeviceMethodResponse&gt;)</h4>
+  <div class="markdown level1 summary"><p>Registers a callback for a method named <code>methodName</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">function onMethod(methodName: string, callback: DoubleValueCallback&lt;DeviceMethodRequest, DeviceMethodResponse&gt;)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><em>methodName</em></td>
+        <td>
+          <p>Name of the method that will be handled by the callback</p>
+
+          
+        </td>
+      </tr>
+      <tr>
+        <td>DoubleValueCallback&lt;<a class="xref" href="DeviceMethodRequest.html#azure_iot_device_DeviceMethodRequest">DeviceMethodRequest</a>, <a class="xref" href="DeviceMethodResponse.html#azure_iot_device_DeviceMethodResponse">DeviceMethodResponse</a>&gt;</td>
+        <td><em>callback</em></td>
+        <td>
+          <p>Function that shall be called whenever a method request for the method called <code>methodName</code> is received.</p>
+
+          
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="azure_iot_device_ModuleClient_sendOutputEvent_1" data-uid="azure-iot-device.ModuleClient.sendOutputEvent_1">sendOutputEvent(string, Message)</h4>
+  <div class="markdown level1 summary"><p>Sends an event to the given module output</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">function sendOutputEvent(outputName: string, message: Message)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><em>outputName</em></td>
+        <td>
+          
+          
+        </td>
+      </tr>
+      <tr>
+        <td><span class="xref">Message</span></td>
+        <td><em>message</em></td>
+        <td>
+          
+          
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Promise&lt;results.MessageEnqueued&gt;</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="azure_iot_device_ModuleClient_sendOutputEvent" data-uid="azure-iot-device.ModuleClient.sendOutputEvent">sendOutputEvent(string, Message, Callback&lt;results.MessageEnqueued&gt;)</h4>
+  <div class="markdown level1 summary"><p>Sends an event to the given module output</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">function sendOutputEvent(outputName: string, message: Message, callback: Callback&lt;results.MessageEnqueued&gt;)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><em>outputName</em></td>
+        <td>
+          <p>Name of the output to send the event to</p>
+
+          
+        </td>
+      </tr>
+      <tr>
+        <td><span class="xref">Message</span></td>
+        <td><em>message</em></td>
+        <td>
+          <p>Message to send to the given output</p>
+
+          
+        </td>
+      </tr>
+      <tr>
+        <td><span class="xref">Callback&lt;results.MessageEnqueued&gt;</span></td>
+        <td><em>callback</em></td>
+        <td>
+          
+          
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="azure_iot_device_ModuleClient_sendOutputEventBatch_1" data-uid="azure-iot-device.ModuleClient.sendOutputEventBatch_1">sendOutputEventBatch(string, Message[])</h4>
+  <div class="markdown level1 summary"><p>Sends an array of events to the given module output</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">function sendOutputEventBatch(outputName: string, messages: Message[])</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><em>outputName</em></td>
+        <td>
+          
+          
+        </td>
+      </tr>
+      <tr>
+        <td><span class="xref">Message[]</span></td>
+        <td><em>messages</em></td>
+        <td>
+          
+          
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Promise&lt;results.MessageEnqueued&gt;</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="azure_iot_device_ModuleClient_sendOutputEventBatch" data-uid="azure-iot-device.ModuleClient.sendOutputEventBatch">sendOutputEventBatch(string, Message[], Callback&lt;results.MessageEnqueued&gt;)</h4>
+  <div class="markdown level1 summary"><p>Sends an array of events to the given module output</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">function sendOutputEventBatch(outputName: string, messages: Message[], callback: Callback&lt;results.MessageEnqueued&gt;)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><em>outputName</em></td>
+        <td>
+          <p>Name of the output to send the events to</p>
+
+          
+        </td>
+      </tr>
+      <tr>
+        <td><span class="xref">Message[]</span></td>
+        <td><em>messages</em></td>
+        <td>
+          
+          
+        </td>
+      </tr>
+      <tr>
+        <td><span class="xref">Callback&lt;results.MessageEnqueued&gt;</span></td>
+        <td><em>callback</em></td>
+        <td>
+          
+          
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="azure_iot_device_ModuleClient_setOptions_1" data-uid="azure-iot-device.ModuleClient.setOptions_1">setOptions(DeviceClientOptions)</h4>
+  <div class="markdown level1 summary"><p>Passes options to the <code>ModuleClient</code> object that can be used to configure the transport.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">function setOptions(options: DeviceClientOptions)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DeviceClientOptions.html#azure_iot_device_DeviceClientOptions">DeviceClientOptions</a></td>
+        <td><em>options</em></td>
+        <td>
+          
+          
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Promise&lt;results.TransportConfigured&gt;</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="azure_iot_device_ModuleClient_setOptions" data-uid="azure-iot-device.ModuleClient.setOptions">setOptions(DeviceClientOptions, Callback&lt;results.TransportConfigured&gt;)</h4>
+  <div class="markdown level1 summary"><p>Passes options to the <code>ModuleClient</code> object that can be used to configure the transport.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">function setOptions(options: DeviceClientOptions, done: Callback&lt;results.TransportConfigured&gt;)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DeviceClientOptions.html#azure_iot_device_DeviceClientOptions">DeviceClientOptions</a></td>
+        <td><em>options</em></td>
+        <td>
+          <p>A &lt;xref:DeviceClientOptions&gt; object.</p>
+
+          
+        </td>
+      </tr>
+      <tr>
+        <td><span class="xref">Callback&lt;results.TransportConfigured&gt;</span></td>
+        <td><em>done</em></td>
+        <td>
+          
+          
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
